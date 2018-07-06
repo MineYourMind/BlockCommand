@@ -1,0 +1,33 @@
+# Eclipse stuff
+/.settings
+/.classpath
+/.project
+/bin
+# Intellij
+.idea/
+out/
+*.iml
+*.iws
+*.ipr
+# ForgeGradle stuff
+/.gradle
+/eclipse
+build/
+*changelog.txt
+# Minecraft test env stuff
+*.log
+*.log.lck
+/options.txt
+/config
+/mods
+/logs
+/resourcepacks
+/saves
+/stats
+/world
+/server.properties
+/eula.txt
+/banned*.json
+/ops.json
+/usercache.json
+/whitelist.json

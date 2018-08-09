@@ -20,6 +20,8 @@ public class EventListener {
 
     @Listener
     public void onBlockInteract(InteractBlockEvent event, @First Player player) {
+        if (event instanceof InteractBlockEvent.Primary.OffHand || event instanceof InteractBlockEvent.Secondary.OffHand) return;
+
         BlockType blockType = event.getTargetBlock().getState().getType();
 
         if (BlockCommand.instance.getConfig().isAllowedBlock(blockType)) {

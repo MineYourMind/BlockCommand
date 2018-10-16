@@ -96,7 +96,7 @@ public class EventListener {
 
             command = command.replace("<player>", player.getName());
             command = command.replace("<name>", player.getName());
-            command = command.replace("<uui>", player.getUniqueId().toString());
+            command = command.replace("<uuid>", player.getUniqueId().toString());
 
             switch (type) {
                 case PLAYER:

@@ -20,11 +20,11 @@ BlockCommand is a plugin similiar to the [ServerSigns](https://dev.bukkit.org/pr
 ### Placeholders
 | Placeholder           | Description                                          |
 | --------------------- | ---------------------------------------------------- |
-| `<player|name>`       | Name of the interacting player                       |
+| `<player;name>`       | Name of the interacting player                       |
 | `<uuid>`              | UUID of the interacting player                       |
-| `<server|srv|s>`      | Defines the command to be run as server/console      |
-| `<message|msg|m>`     | Defines it to be a message send to the player        |
-| `<broadcast|bcast|b>` | Defines it to be a message send to all players       |
+| `<server;srv;s>`      | Defines the command to be run as server/console      |
+| `<message;msg;m>`     | Defines it to be a message send to the player        |
+| `<broadcast;bcast;b>` | Defines it to be a message send to all players       |
 
 ### Examples
 `/bcmd add <srv> give <player> stone`  

@@ -53,14 +53,14 @@ public class BlockCommand {
     }
 
     @Listener
-    public void oneEnable(GamePreInitializationEvent event) {
+    public void onEnable(GamePreInitializationEvent event) {
         instance = this;
-        config = new Config(HoconConfigurationLoader.builder().setPath(configPath.resolve("config.conf")).build());
-        blockStorage = new BlockStorage(HoconConfigurationLoader.builder().setPath(configPath.resolve("blockStorage.conf")).build());
     }
 
     @Listener
     public void onStart(GameStartingServerEvent event) {
+        config = new Config(HoconConfigurationLoader.builder().setPath(configPath.resolve("config.conf")).build());
+        blockStorage = new BlockStorage(HoconConfigurationLoader.builder().setPath(configPath.resolve("blockStorage.conf")).build());
 
         CommandSpec addCommand = CommandSpec.builder()
                 .description(Text.of("Add a command to the block you are looking at."))
